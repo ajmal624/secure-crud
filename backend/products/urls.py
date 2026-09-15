@@ -1,6 +1,4 @@
-from django.urls import path
-from django.urls import include
-
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from .views import ProductViewSet
@@ -8,17 +6,15 @@ from .views import ProductViewSet
 
 router = DefaultRouter()
 
-
 router.register(
     "products",
     ProductViewSet,
-    basename="product"
+    basename="product",
 )
-
 
 urlpatterns = [
     path(
         "",
-        include(router.urls)
+        include(router.urls),
     ),
 ]
