@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+}
+
+
+button {
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+/* LOGIN */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f4f6f8;
+}
+
+
+.login-card {
+    width: 360px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.login-card h1 {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+
+.login-card p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.login-card button {
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+
+.error {
+    color: #dc2626;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+}
+
+
+/* APP */
+
+.app {
+    min-height: 100vh;
+
+    padding-bottom: 50px;
+}
+
+
+.header {
+    background: white;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.header h1 {
+    margin: 0;
+}
+
+
+.header p {
+    margin: 5px 0 0;
+
+    color: #666;
+}
+
+
+.logout-btn {
+    background: #dc2626;
+}
+
+
+/* MAIN */
+
+main {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 30px auto;
+}
+
+
+/* FORM */
+
+.form-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.form-card h2 {
+    margin-top: 0;
+}
+
+
+.form-actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.cancel-btn {
+    background: #6b7280;
+}
+
+
+/* ERROR */
+
+.error-box {
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+}
+
+
+/* PRODUCTS */
+
+.products h2 {
+    margin-bottom: 15px;
+}
+
+
+.product-card {
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.product-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 8px;
+}
+
+
+.product-card p {
+    color: #666;
+}
+
+
+.actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.delete-btn {
+    background: #dc2626;
+}
+
+
+.empty {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: #666;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px;
+    }
+
+
+    main {
+        width: 94%;
+    }
+
+
+    .product-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .actions {
+        width: 100%;
+    }
+
+
+    .actions button {
+        flex: 1;
+    }
+
+}
